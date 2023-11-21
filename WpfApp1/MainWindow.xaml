@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Задание №1" Height="450" Width="500" Background="white">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="431*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="42"/>
+            <RowDefinition Height="230*"/>
+           
+
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Введите значение а - " Grid.Row="0" Margin="16,10,16,16"  FontSize="14" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBoxA" Margin="94,10,16,0" Height="22" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock Text="Введите значение b - " Grid.Row="1"  Margin="16,10,16,16" FontSize="14" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBoxB" Grid.Row="1" Margin="94,10,16,10" Grid.Column="1"/>
+        <TextBox x:Name="TbAnswer" Grid.Row="4" Margin="47,0,16,195" Background="#FFFACD" Grid.ColumnSpan="2"/>
+
+        <Button Content="Рассчитать" Background="#FFFACD" Click="Button_Click" Grid.Row="2"  Margin="35,10,96,10" FontSize="14" FontFamily="Candara" Grid.Column="1"/>
+
+
+        <TextBlock Text="Результаты -" Grid.Row="3"  Margin="16,16,16,10" FontSize="14" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TbAnswer_Copy" Grid.Row="4" Margin="47,60,16,131" Background="#FFFACD" Grid.ColumnSpan="2"/>
+        <TextBlock Text="C =" Grid.Row="4"  Margin="16,0,396,218" FontSize="14" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBlock Text="P =" Grid.Row="4"  Margin="16,60,396,158" FontSize="14" FontFamily="Candara" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
